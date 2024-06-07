@@ -1,0 +1,451 @@
+body{
+    background-color:rgb(0, 0, 0);
+    scroll-behavior:unset;
+    overflow: hidden;
+    
+}
+
+.navbar-brand{
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 9px black;
+    margin-left: 3%;
+    margin-right: 20%;
+}
+
+#navbarSupportedContent{
+position: absolute;
+right: 1.25rem;
+}
+
+#home{
+    /* padding-top: 5px; */
+    background-color: rgb(6, 6, 61);
+}
+
+.bg-img-1{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.418)),url("/Assests/images/Store 1.jpg");
+
+}
+
+.bg-img-2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.418)),url("/Assests/images/Store 2.jpg")
+
+}
+
+.bg-img-3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.418)),url("/Assests/images/Store 3.jpg")
+
+}
+
+.bg-img-4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.418)),url("/Assests/images/Store 4.jpg")
+
+}
+
+.bg-img-5{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.418)),url("/Assests/images/Store 5.jpg")
+
+}
+.bg-img-6{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.418)),url("/Assests/images/Store 6.jpg")
+
+}
+
+.carousel-image{
+    height: 88vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.homeSide{
+    display: flex;
+    gap: 9%;
+}
+
+.homeBtns{
+    display: grid;
+    grid-template-columns:50%;
+    row-gap: 2%;
+    width: 20%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+.box1{
+    background-color: rgba(105, 105, 105, 0.63);
+    height: 90%;
+}
+
+.box1:hover{
+    box-shadow: 4px 4px 12px white;
+    opacity: 90%;
+}
+
+
+#lblCountCust,#lblCountItem,#lblCountOrd, #topLab{
+    font-weight: 900;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 100%;
+}
+
+.box1>img{
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+    margin: 10px;
+    opacity: 85%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 5px white;
+}
+
+.carousel{
+    margin: 1%;
+    margin-top: 1%;
+    width: 75%;
+    height: auto;
+}
+
+.moto{
+    position: absolute;
+    top: 70vh;
+    left: 40%;
+    transform: translateX(-50%);
+    display: grid;
+    text-align: center;
+
+}
+
+.moto h1{
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    color:silver;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.moto h2{
+    color: rgb(152, 202, 202);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.col-form-label.notif {
+    font-size: small;
+    color: crimson;
+    font-weight: 400;
+    
+}
+
+#customers{
+    background-color: rgb(6, 6, 61);
+    margin: 1%;
+}
+
+#sectionCustomer{
+    background-color: rgba(255, 255, 255, 0.849);
+    position: relative;
+    margin: 15%;
+    left: -15%;
+    margin-top: 10%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 8px;
+    justify-content: center;
+    text-align: justify;
+    padding: 2%;
+    
+}
+
+.btnsset{
+    border-radius: 20%;
+    border-color: white;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.btnsset:hover{
+    opacity: 80%;
+    box-shadow: 2px 2px 8px black;
+
+}
+
+#customerTable{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    position: relative;
+    left: 40%;
+    margin-top: -55%;
+    padding: 3%;
+    height: 600px;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+    
+}
+
+tr{
+    border: 2px solid black;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+#itemTable{
+    background-color: rgba(255, 255, 255, 0.849);
+    position: relative;
+    left: 40%;
+    margin-top: -55%;
+    padding: 3%;
+    height: 600px;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+#ItemSection{
+    background-color: rgba(255, 255, 255, 0.849);
+    position: relative;
+    margin: 15%;
+    left: -15%;
+    margin-top: 10%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+#item{
+    background-color: rgb(6, 6, 61);
+    margin: 1%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#orders{
+    background-color: rgb(6, 6, 61);
+    margin: 1%;
+}
+
+.orders{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 7%;
+    margin-left: 5%;
+    }
+
+.postBtns{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        gap: 10px;
+}
+
+#RemoveItem{
+    background-color: orangered;
+}
+
+#UpdateItem{
+    background-color: seagreen;
+}
+
+#addToCart{
+    background-color: yellowgreen;
+}
+
+.place{
+    width: 100%;
+    border: 3px solid black;
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 5%;
+}
+
+
+.main{
+    text-align: center;
+    background-color:rgb(8, 91, 129);
+    color:rgb(168, 157, 5);
+    border: 1px solid black;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    margin: 1%;
+
+}
+
+.divide{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    row-gap: 8%;
+    column-gap: 20%;
+    padding-left:3%;
+}
+
+.topic, .col-form-label{
+    font-size: 20px;
+    color: black;
+    font-weight:bold;
+    height: 10px;
+}
+
+.second{
+   padding-top: 25px;
+}
+
+#addr{
+    width: 90%;
+    margin-left: 4%;
+    margin-bottom: 5%;
+}
+
+.ad{
+    margin-left: 3%;
+}
+
+.lastBtns{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    row-gap: 8%;
+    margin-top: 2%;
+}
+
+
+#txtQuantity,#txtBalance{
+ margin-left: 4%;
+
+}
+
+#searchBar{
+    width: 60%;
+    position: relative;
+    right: 20%;
+    left: 20%;
+}
+
+.form-control{
+    height: 30px;
+    width: 90%;
+}
+
+.twoside{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    row-gap: 3%;
+    column-gap: 4.5%;
+    padding-left:3%;
+}
+
+.addToCart{
+   margin-left: 70%;
+   margin-top: 2%;
+   width: 100px;
+   height: 40px;
+   color: black;
+   font-weight: bold;
+   background-color: rgba(255, 136, 0, 0.925);
+}
+
+.Purchase{
+   margin-top: 2%;
+   width: 100px;
+   height: 40px;
+   color: black;
+   font-weight: bold;
+   background-color: rgba(0, 119, 255, 0.938);
+   margin-left: 40%;
+   margin-bottom: 10px;
+
+}
+
+.ClearOrder{
+    margin-top: 2%;
+   width: 100px;
+   height: 40px;
+   color: black;
+   font-weight: bold;
+   background-color:lightsalmon;
+   margin-left: 40%;
+   margin-bottom: 10px;
+}
+.ClearSlide{
+    margin-top: 2%;
+   width: 100px;
+   height: 40px;
+   color: black;
+   font-weight: bold;
+   background-color:yellow;
+   margin-left: 40%;
+   margin-bottom: 10px;
+}
+.balTopics{
+    margin-left: 3%;
+    font-size: 15px;
+    font-weight: 100;
+    color:rgb(4, 130, 189);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.644);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.balTopics>label{
+    font-size: 30px;
+    font-weight: 450;
+    color: rgb(4, 130, 189);
+}
+
+.bala{
+    padding-top: 40px;   
+}
+
+#ordTable{
+    width: 90%;
+    margin-left: 5%;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.849);
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 0.5%;
+}
+
+
+.selectbox{
+    height: 30px;
+    width: 90%;
+    background-color: rgb(224, 224, 224);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1px;
+    background:rgb(0, 0, 0);
+    width: 100%;
+    bottom: 0;
+}
+.footer-text p{
+    font-size: 17px;
+    margin: 1px;
+    color: snow;
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>DK Space | POS System</title>
+    <link rel="stylesheet" href="/Assests/Css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">DK Space</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="homeBtn" class="nav-link active" aria-current="page" href="#" >Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="custBtn" class="nav-link" href="#">Customer</a>
+              </li>
+              <li class="nav-item">
+                <a id="itemBtn" class="nav-link" href="#">Item</a>
+              </li>
+              <li class="nav-item">
+                <a id="orderBtn" class="nav-link" href="#">Orders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div class="homeSide">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image bg-img-1 active">
+          </div>
+          <div class="carousel-item carousel-image bg-img-2">
+          </div>
+          <div class="carousel-item carousel-image bg-img-3">
+          </div>
+          <div class="carousel-item carousel-image bg-img-4">
+        </div>
+        <div class="carousel-item carousel-image bg-img-5">
+        </div>
+        <div class="carousel-item carousel-image bg-img-6">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+    </div>
+        <div class="homeBtns">
+            <div class="box1 custbox">
+                <img src="/Assests/images/customers.jpg" alt="image">
+                <label id="topLab"> Customers </label>
+                <label id="lblCountCust">0</label>
+            </div>
+            <div class="box1 itembox">
+                <img src="/Assests/images/items.jpg" alt="">
+                <label id="topLab"> Items </label>
+                <label id="lblCountItem">0</label>
+            </div>
+            <div class="box1 orderbox">
+                <img src="/Assests//images/orders.jpg" alt="">
+                <label id="topLab"> Orders </label>
+                <label id="lblCountOrd">0</label>
+            </div>
+            
+        </div>
+      </div>
+
+      <div class="moto">
+      <h1>DK Space</h1>
+      <h2>Best Place For Shopping</h2>
+    </div>
+</section>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div id="customers">
+        <section class="container">
+            <section class="row">
+                <div id="sectionCustomer" class="col-4">
+                    <form>
+                        <div class="col-autoLbl">
+                            <label for="txtCustId" class="col-form-label">Customer Id</label>
+                        </div>
+                        <div class="col-auto">
+                            <input  id="txtCustId" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label id="custId" class="col-form-label notif"></label>
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="txtName" class="col-form-label">Customer Name</label>
+                        </div>
+                        <div class="col-auto">
+                            <input  id="txtName" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label id="custnam" class="col-form-label notif"></label>
+                        </div>
+                        <div class="col-autoLbl">
+                            <label for="txtAddress" class="col-form-label">Customer Address</label>
+                        </div>
+                        <div  class="col-auto">
+                            <input id="txtAddress" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <br>
+                        <div class="col-autoLbl">
+                            <label for="txtSalary" class="col-form-label">Customer Salary</label>
+                        </div>
+                        <div  class="col-auto">
+                            <input id="txtSalary" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-autoLbl">
+                            <label id="custSal" class="col-form-label notif"></label>
+                        </div>
+                        <div id="customer_btn" class="btns container-fluid">
+                            <button id="btnAddCust" class="btn btn-success" type="button">Save Customer</button>
+                            <button id="btnDeleteCust" class="btn btn-danger" type="button">Remove</button>
+                            <button id="btnUpdateCust" class="btn btn-success" type="button">Update</button>
+                            <button id="btnGetAllCust" class="btn btn-success" type="button">Get All</button>
+                            <button id="btnClearCust" class="btn btn-danger" type="button">Clear All</button>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div id="customerTable" class="col-7">
+                    <table class="table table-hover">
+                        <thead class="bg-light ">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Customer Name</th>
+                            <th>Customer Address</th>
+                            <th>Customer Salary</th>
+
+                        </tr>
+                        </thead>
+                        <tbody id="tblCustomers">
+                            <!-- <tr>
+                                <td>C00-001</td>
+                                <td>Rehan</td>
+                                <td>Colombo</td>
+                                <td>60000</td>
+                             </tr> 
+                             <tr>
+                                <td>C00-002</td>
+                                <td>Dasun</td>
+                                <td>Panadaura</td>
+                                <td>30000</td>
+                             </tr> 
+                             <tr>
+                                <td>C00-003</td>
+                                <td>Dasun</td>
+                                <td>Panadaura</td>
+                                <td>30000</td>
+                             </tr>  -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+        </section>
+</div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+<div id="item">
+    <section class="container">
+        <section class="row">
+            <div id="ItemSection" class="col-4">
+                <form>
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Item Code</label>
+                    </div>
+                    <div class="col-auto">
+                        <input id="txtItemCode" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-autoLbl">
+                        <label id="ICode" class="col-form-label notif"></label>
+                    </div>
+
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Item Name</label>
+                    </div>
+                    <div class="col-auto">
+                        <input id="txtItemName" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-autoLbl">
+                        <label id="IName" class="col-form-label notif"></label>
+                    </div>
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Item Qty</label>
+                    </div>
+                    <div class="col-auto">
+                        <input id="txtItemQty" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-autoLbl">
+                        <label id="IQty" class="col-form-label notif"></label>
+                    </div>
+                    <div class="col-autoLbl">
+                        <label  class="col-form-label">Item Price</label>
+                    </div>
+                    <div class="col-auto">
+                        <input id="txtItemPrice" type="text"  class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-autoLbl">
+                        <label id="IPrice" class="col-form-label notif"></label>
+                    </div>
+                    <div class="btns container-fluid">
+                        <button id="btnAddItem" class="btn btn-success" type="button">Save Item</button>
+                            <button id="btnDeleteItem" class="btn btn-danger" type="button">Remove</button>
+                            <button id="btnUpdateItem" class="btn btn-success" type="button">Update</button>
+                            <button id="btnGetAllItem" class="btn btn-success" type="button">Get All</button>
+                            <button id="btnClearItem" class="btn btn-danger" type="button">Clear All</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="itemTable" class="col-7">
+                <table class="table table-hover">
+                    <thead class="bg-light ">
+                    <tr>
+                        <th>Item Code</th>
+                        <th> Item Name</th>
+                        <th>Item Qty</th>
+                        <th>Item Price</th>
+
+                    </tr>
+                    </thead>
+                    <tbody id="tblItems">
+                        <!-- <tr>
+                               <td>I00-001</td>
+                              <td>Books</td>
+                              <td>100</td>
+                             <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>I00-002</td>
+                           <td>Files</td>
+                           <td>1000</td>
+                          <td>20</td>
+                     </tr>
+                     <tr>
+                        <td>I00-003</td>
+                       <td>Chocoltes</td>
+                       <td>50</td>
+                      <td>10</td>
+                 </tr> -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </section>
+</div>
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<div id="orders">
+    <input id="searchBar" type="text" class="form-control" aria-describedby="passwordHelpInline" placeholder="Search Orders here with This Format (O001)">
+    <div class="orders">
+        <div class="place invoice">
+        <p class="main">Invoice Details</p>
+
+            <div class="divide">
+                <div class="major">
+                    <p class="topic"> order Id :</p>
+                    <input id="txtOrderId" type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+
+                <div class="major">
+                    <p class="topic"> Date :</p>
+                    <input id="txtDate" type="date" class="form-control" id="start" name="trip-start" value="2024-06-05" min="2024-06-01" max="2025-06-31"  />
+                </div>
+
+                <div class="major">
+                    <p class="topic"> Customer :</p>
+                    <select class="selectbox" name="cust" id="cust" >
+                        <option value="none"> </option>
+                        <!-- <option value="chamara">chamara</option>
+                        <option value="udesh">udesh</option>
+                        <option value="shaheeb">shaheeb</option>
+                        <option value="kumi">kumi</option> -->
+                      </select>
+                </div>
+
+
+                <div class="major">
+                    <p class="topic">Customer Id :</p>
+                    <input id="CustIdLbl" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+
+                <div class="major">
+                    <p class="topic">Name :</p>
+                    <input  id="CustNameLbl" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+                
+                <div class="major">
+                    <p class="topic">Salary :</p>
+                    <input  id="CustSalaryLbl" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+            </div>
+
+            <div class="second">
+                <p class="topic ad">Address :</p>
+                <input id="addr" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+            </div>
+        </div>
+
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+
+        <div class="place item"> 
+            
+            <p class="main">Item Select</p>
+
+            <div class="divide">
+                <div class="major">
+                    <p class="topic"> Item :</p>
+                    <select name="item" class="selectbox" id="items" >
+                        <option value="none"> </option>
+                        <!-- <option value="Cake">Cake</option>
+                        <option value="Fruit">Fruit</option>
+                        <option value="Book">Book</option>
+                        <option value="Frock">Frock</option> -->
+                      </select>
+                </div>
+
+                <div class="major">
+                    <p class="topic"> Item Code :</p>
+                     <input id="lblCode" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+            </div>
+
+            <div class="twoside">
+                <div class="major">
+                    <p class="topic"> Item Name :</p>
+                    <input id="lblName" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+
+
+                <div class="major">
+                    <p class="topic">price :</p>
+                    <input id="lblPrice" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+
+                <div class="major">
+                    <p class="topic">Qty On Hand :</p>
+                    <input id="lblQty" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+                </div>
+            </div>
+             
+            <div class="second">
+                <p class="topic ad">Order Quantity :</p>
+                <input id="txtQuantity" type="text" class="form-control ordQty" aria-describedby="passwordHelpInline" required>
+            </div>
+            <div class="col-autoLbl">
+                <label id="lblQtyWarning" class="col-form-label notif"></label>
+            </div>
+            <div class="postBtns">
+                <button id="RemoveItem" class="btnsset" type="button">Remove Item</button>
+                <button id="UpdateItem" class="btnsset" type="button">Update Item</button>
+                <button id="addToCart" class="btnsset" type="button">Add To Cart</button>
+            </div>
+            
+
+        </div>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="place balance">
+            <div class="balTopics">
+                <h2>Total : Rs.</h2>
+                <label id="totalLbl" class="TotalLabel" for="Total"></label>
+                <h2>Sub Total : Rs. </h2>
+                <label id="subTotalLbl" class="subTotalLabel" for="Total"></label>
+            </div>
+
+            <div class="divide">
+                <div class="major">
+                    <p class="topic"> Cash :</p>
+                    <input id="txtCash" type="text" class="form-control cash" aria-describedby="passwordHelpInline" required>
+                </div>
+                <div class="major">
+                    <p class="topic"> Discount (%):</p>
+                    <input id="txtDiscount" type="text" class="form-control discount" aria-describedby="passwordHelpInline" required>
+                </div>
+            </div>
+            <div class="second bala">
+                <p class="topic ad">Balance :</p>
+                <input id="txtBalance" type="text" class="form-control" aria-describedby="passwordHelpInline" readonly>
+            </div>
+            <div class="lastBtns">
+            <button id="Purchase" class="Purchase btnsset" type="button">Purchase</button>
+            <button id="ClearOrder" class="ClearOrder btnsset" type="button">Cancel</button>
+            <button id="ClearSlide" class="ClearSlide btnsset" type="button">Clear</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="ordTable" class="col-12">
+                <table class="table table-hover">
+                    <thead class="bg-light ">
+                    <tr>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+        
+        
+                    </tr>
+                    </thead>
+                    <tbody id="tblOrders">
+                        <!-- <tr>
+                            <td>I00-002</td>
+                            <td>Files</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>200</td>
+                         </tr>  -->
+                    </tbody>
+                </table>
+            </div>
+            <footer class="footer">
+                <div class="footer-text">
+                    <p>Copyright &copy; 2024 by Deshini Kanchana | All Rights Reserved. </p>
+                </div>
+                </footer>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="/Controller/IndexController.js"></script>
+        <script src="/Controller/CustomerController.js" ></script>
+        <script src="/Controller/ItemController.js" ></script>
+        <script src="/Controller/OrderController.js"></script>
+        <script src="/db/DB.js"></script>
+        <script src="/Model/Customer.js"></script>
+        <script src="/Model/Item.js"></script>
+        <script src="/Model/Orders.js"></script>
+        <script src="/Model/OrderDetails.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
